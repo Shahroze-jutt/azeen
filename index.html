@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bookify - Your 24/7 AI-powered booking agent that never sleeps. Automate appointments, reservations, and scheduling.">
+    <title>Bookify - Your 24/7 Booking Agent Never Sleeps</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Retell AI Widget Script -->
+    <script
+        id="retell-widget"
+        src="https://dashboard.retellai.com/retell-widget-v2.js"
+        type="module"
+        data-public-key="YOUR_RETELL_PUBLIC_KEY"
+        data-agent-id="YOUR_CHAT_AGENT_ID"
+        data-voice-public-key="YOUR_VOICE_PUBLIC_KEY"
+        data-voice-agent-id="YOUR_VOICE_AGENT_ID"
+        data-agent-version="0"
+        data-title="Bookify Assistant"
+        data-bot-name="Bookify"
+        data-color="#00ff94"
+        data-fab-text="Chat with Bookify"
+        data-auto-open="false"
+    ></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-logo">
+                <span class="logo-book">Book</span><span class="logo-ai">ify</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#how-it-works">How it works</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+            </ul>
+            <a href="https://cal.com/azeen-afzal-enqrls/15min" target="_blank" class="btn btn-primary">Book a Demo</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-text">AI-Powered Booking</span>
+            </div>
+            
+            <h1 class="hero-title">
+                Your 24/7<br>
+                <span class="hero-title-gradient">Booking<br>Agent</span>
+                <span class="hero-title-white">Never<br>Sleeps</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                Let AI handle appointments, reservations, and scheduling — so<br>
+                you can focus on what matters.
+            </p>
+            
+            <div class="hero-cta">
+                <button class="btn btn-primary btn-large" id="openRetellChat">Try Live Demo</button>
+                <a href="https://cal.com/azeen-afzal-enqrls/15min" target="_blank" class="btn btn-secondary btn-large">Book a Demo Call</a>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Booking accuracy</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">3S</div>
+                    <div class="stat-label">Average response time</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Always available</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">8+</div>
+                    <div class="stat-label">Channels supported</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-gradient"></div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-label">HOW IT WORKS</h3>
+                <h2 class="section-title">From message<br>to confirmed booking</h2>
+                <p class="section-subtitle">Your simple steps powered by conversational AI and smart<br>integrations.</p>
+            </div>
+            
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <div class="icon-dot cyan"></div>
+                    </div>
+                    <h4 class="step-title">Customer messages</h4>
+                    <p class="step-description">Your customers reach out via SMS, email, WhatsApp, web, or DM.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <div class="icon-dot pink"></div>
+                    </div>
+                    <h4 class="step-title">AI understands</h4>
+                    <p class="step-description">Our AI agent reads, understands context, and asks only for missing details.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <div class="icon-dot blue"></div>
+                    </div>
+                    <h4 class="step-title">Checks & books</h4>
+                    <p class="step-description">AI checks availability, confirms the slot instantly, no human required.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <div class="icon-dot green"></div>
+                    </div>
+                    <h4 class="step-title">Sends confirmation</h4>
+                    <p class="step-description">Customer gets automatic confirmation, calendar invite, and reminders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Demo Section -->
+    <section id="demo" class="live-demo">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-label">LIVE DEMO</h3>
+                <h2 class="section-title">Chat with the<br>booking agent</h2>
+            </div>
+            
+            <div class="demo-container">
+                <div class="demo-features">
+                    <div class="demo-feature">
+                        <svg class="feature-check" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#00FF94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Understands natural language — no rigid commands needed</span>
+                    </div>
+                    <div class="demo-feature">
+                        <svg class="feature-check" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#00FF94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Asks only for what it needs to book</span>
+                    </div>
+                    <div class="demo-feature">
+                        <svg class="feature-check" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#00FF94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Handles rescheduling and cancellations</span>
+                    </div>
+                    <div class="demo-feature">
+                        <svg class="feature-check" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#00FF94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Works confidently without second-guessing</span>
+                    </div>
+                    <div class="demo-feature">
+                        <svg class="feature-check" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#00FF94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Works across WhatsApp, web, Telegram, SMS</span>
+                    </div>
+                    <div class="demo-feature">
+                        <svg class="feature-check" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M16.667 5L7.5 14.167 3.333 10" stroke="#00FF94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Instant bookings on calendar</span>
+                    </div>
+                </div>
+                
+                <div class="chat-widget">
+                    <div class="chat-header">
+                        <div class="chat-avatar">
+                            <div class="avatar-icon">🤖</div>
+                        </div>
+                        <div class="chat-info">
+                            <div class="chat-name">Bookify Assistant</div>
+                            <div class="chat-status">● Online</div>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message bot-message">
+                            <div class="message-content">
+                                Hi! I'm an AI booking assistant. I can help you schedule appointments, reserve tables, book sessions, and more.
+                            </div>
+                        </div>
+                        <div class="message bot-message">
+                            <div class="message-content">
+                                What would you like to book today?
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-suggestions">
+                        <button class="suggestion-chip" data-message="Schedule an appointment for next week">Schedule for next week</button>
+                        <button class="suggestion-chip" data-message="I need to book a table for 4 people">Reserve a table</button>
+                    </div>
+                    
+                    <div class="chat-input-container">
+                        <input type="text" class="chat-input" id="chatInput" placeholder="Of course! I can help you schedule a new appointment 📅">
+                        <button class="send-button" id="sendButton">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M18.333 10L1.667 2.5L5 10l-3.333 7.5L18.333 10z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-label">PRICING</h3>
+                <h2 class="section-title">Simple, honest pricing</h2>
+                <p class="section-subtitle">Start free. Scale as you grow. No hidden fees.</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Starter Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">STARTER</h3>
+                        <div class="plan-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">0</span>
+                        </div>
+                        <div class="plan-period">Free forever</div>
+                    </div>
+                    
+                    <ul class="plan-features">
+                        <li>Up to 50 bookings/month</li>
+                        <li>SMS & email only</li>
+                        <li>Email ticket support</li>
+                        <li>Standard analytics</li>
+                    </ul>
+                    
+                    <button class="btn btn-outline btn-full">Get started free</button>
+                </div>
+                
+                <!-- Pro Plan -->
+                <div class="pricing-card pricing-card-featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="plan-name">PRO</h3>
+                        <div class="plan-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">49</span>
+                        </div>
+                        <div class="plan-period">per month</div>
+                    </div>
+                    
+                    <ul class="plan-features">
+                        <li>Unlimited bookings</li>
+                        <li>WhatsApp + SMS + Web + DM</li>
+                        <li>SMS & email reminders</li>
+                        <li>Custom branding</li>
+                        <li>Advanced analytics</li>
+                        <li>Priority email support</li>
+                    </ul>
+                    
+                    <button class="btn btn-primary btn-full">Start 14-day trial</button>
+                </div>
+                
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">ENTERPRISE</h3>
+                        <div class="plan-price">
+                            <span class="price-amount-custom">Custom</span>
+                        </div>
+                        <div class="plan-period">Contact us</div>
+                    </div>
+                    
+                    <ul class="plan-features">
+                        <li>Everything in Pro</li>
+                        <li>AI-powered Voice AI</li>
+                        <li>Multi-location support</li>
+                        <li>Custom integrations</li>
+                        <li>Dedicated support</li>
+                        <li>White-label option</li>
+                        <li>SLA guarantee</li>
+                    </ul>
+                    
+                    <button class="btn btn-outline btn-full">Talk to Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-book">Book</span><span class="logo-ai">ify</span>
+                    </div>
+                    <p class="footer-tagline">© 2024 Bookify. All rights reserved.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <a href="#how-it-works">How it works</a>
+                        <a href="#demo">Demo</a>
+                        <a href="#pricing">Pricing</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="#">About</a>
+                        <a href="#">Privacy policy</a>
+                        <a href="#">Terms</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
